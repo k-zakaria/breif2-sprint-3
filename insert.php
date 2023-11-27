@@ -1,6 +1,5 @@
 <?php
-include 'connect.php';
-include 'heder.php';
+
 
 if (isset($_POST["submit"])) {
     $fname = $_POST["name1"];
@@ -13,8 +12,10 @@ if (isset($_POST["submit"])) {
 
     if (mysqli_query($conn, $query)) {
         echo "<script>alert('Insert successfully');</script>";
+        header('location:index.php');
+        unset($_POST["submit"]);
     } else {
-        echo "Error: " . $query . "<br>" . mysqli_error($conn);
+        echo "Error: kacimi ";
     }
 }
 ?>

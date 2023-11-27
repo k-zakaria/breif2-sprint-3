@@ -1,6 +1,5 @@
 <?php
-    include 'connect.php';
-    include 'heder.php';
+
     include 'navbar.php'; 
 ?>
 <div class="content py-5  bg-light">
@@ -19,7 +18,7 @@
                                     <label for="email" class="mb-0">Email</label>
                                     <div class="row mb-1">
                                         <div class="col-lg-12">
-                                            <input type="text" name="email" id="email" class="form-control" required="">
+                                            <input type="email" name="email" id="email" class="form-control" required>
                                         </div>
                                     </div>
                                     <label for="password" class="mb-0 mt-4">Password</label>
@@ -28,7 +27,7 @@
                                             <input type="password" name="password" id="password" class="form-control" required="">
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-secondary btn-lg float-centre">Sing In</button>
+                                    <button type="submit" name="submit" class="btn btn-secondary btn-lg float-centre">Sing In</button>
                                 </fieldset>
                             </form>
                         </div>

@@ -1,6 +1,5 @@
 <?php
-include 'connect.php';
-include 'heder.php';
+include 'navbar.php';
 ?>
 
 <main class="flex-shrink-0">
